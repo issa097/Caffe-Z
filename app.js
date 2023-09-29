@@ -1,25 +1,25 @@
-let name = prompt("your name");
+let name = prompt("what is your name");
 
-let gender = prompt("mal , female ");
+let gender = prompt("what is your Gender male/female");
 
 if (gender == "mal") {
   alert("Welcome Mr" + `${name}`);
 } else if (name == "female") {
-  alert("wELCOM Mrs" + `${name}`);
+  alert("Welcome Ms" + `${name}`);
 } else {
   alert("wlcome");
 }
-let drink = prompt("cpld , hot");
-let drinkss = prompt("what is the dirnk");
-let drinks = alert("prepared");
+let drinkType = prompt("do you want hot or cold drink");
+let drinkName = prompt("what is your drink name");
+alert("your drink is getting prepared ");
 
 console.log(
   "name:" + name,
   "gender:" + gender,
-  "drink:" + drink,
-  "drinkss:" + drinkss
+  "drink:" + drinkType,
+  "drinkss:" + drinkName
 );
-
+//Evaluate each of the following Javascript expressions and show the value
 console.log(-9 * 3);
 console.log("“value is “" + 50);
 console.log(17 % 5);
@@ -30,9 +30,11 @@ console.log(4 != 5);
 console.log(7 <= 8);
 console.log(Math.ceil(8.5), Math.floor(8.5));
 
+// Read a number (using prompt) and display it using alert
 let num = prompt("push the number");
 alert("num=" + num);
 
+// Q3 : Read in two numbers and display them in ascending order
 let x1 = prompt("num1");
 let x2 = prompt("num2");
 if (x1 < x2) {
@@ -41,20 +43,23 @@ if (x1 < x2) {
   alert(x2 + "<" + x1);
 }
 
+// Q4: Read in two numbers and display the larger
 let c1 = prompt("push the number");
-let c2 = prompt("push the number");
+let c2 = prompt("push another number");
 
 if (c1 > c2) {
-  alert(c1 + "larger");
+  alert(c1 +" " + "is larger");
 } else {
-  alert(c2 + "larger");
+  alert(c2 +" " + "is larger");
 }
 
+// Q5: Read two numbers and display their sum.  What problem did you encounter?
 let sum1 = prompt("push the number");
-let sum2 = prompt("push the number");
+let sum2 = prompt("push another number");
 
-alert(+sum1 + +sum2);
+alert("sum=" + (+sum1 + +sum2));
 
+// Q6: If you have a “num” variable,  Your task is to print:
 let numbers = prompt("push the number 1-9");
 switch (+numbers) {
   case 1:
@@ -96,5 +101,3 @@ switch (+numbers) {
   default:
     alert("PLEASE TRY AGAIN");
 }
-
-
