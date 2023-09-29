@@ -16,8 +16,8 @@ alert("your drink is getting prepared ");
 console.log(
   "name:" + name,
   "gender:" + gender,
-  "drink:" + drinkType,
-  "drinkss:" + drinkName
+  "drinkType:" + drinkType,
+  "drinkName:" + drinkName
 );
 //Evaluate each of the following Javascript expressions and show the value
 console.log(-9 * 3);
