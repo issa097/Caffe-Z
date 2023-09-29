@@ -2,7 +2,7 @@ let name = prompt("what is your name");
 
 let gender = prompt("what is your Gender male/female");
 
-if (gender == "mal") {
+if (gender == "male") {
   alert("Welcome Mr" + `${name}`);
 } else if (name == "female") {
   alert("Welcome Ms" + `${name}`);
