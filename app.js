@@ -1,30 +1,46 @@
+let oo = [];
+
 let name = prompt("what is your name");
+oo.push(name);
 
-let gender = prompt("what is your Gender male/female");
+let gender;
+function lol() {
+  while (gender != "male" || gender != "female") {
+    gender = prompt("what is your Gender male/female please");
+    let issa = gender.toLocaleLowerCase();
+    if (issa == "male") {
+      alert("Welcome Mr" + `${name}`);
+      oo.push(issa);
+      break;
+    } else if (issa == "female") {
+      alert("Welcome Ms" + `${name}`);
+      oo.push(issa);
 
-if (gender == "male") {
-  alert("Welcome Mr" + `${name}`);
-} else if (name == "female") {
-  alert("Welcome Ms" + `${name}`);
-} else {
-  alert("wlcome");
+      break;
+    }
+  }
 }
+lol();
+
 let drinkType = prompt("do you want hot or cold drink");
+oo.push(drinkType);
 let drinkName = prompt("what is your drink name");
+oo.push(drinkName);
+
 alert("your drink is getting prepared ");
 
+for (let i = 0; i < oo.length; i++) {
+  console.log(oo[i]);
+}
+
+console.log(
+  "name:" + name,
+  "gender:" + gender,
+  "drinkType:" + drinkType,
+  "drinkName:" + drinkName
+);
 
 
-
-
-
-
-// console.log(
-//   "name:" + name,
-//   "gender:" + gender,
-//   "drinkType:" + drinkType,
-//   "drinkName:" + drinkName
-// );
 // //Evaluate each of the following Javascript expressions and show the value
 // console.log(-9 * 3);
 // console.log("“value is “" + 50);
