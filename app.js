@@ -39,7 +39,7 @@ console.log(
   "drinkType:" + drinkType,
   "drinkName:" + drinkName
 );
-// issahadd
+
 
 // //Evaluate each of the following Javascript expressions and show the value
 // console.log(-9 * 3);
