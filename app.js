@@ -166,18 +166,18 @@ form.appendChild(input3);
 let label4 = document.createElement("label");
 form.appendChild(label4);
 
-let hots = document.createElement("label");
-form.appendChild(hots);
+let label9 = document.createElement("label");
 let checkbox = document.createElement("input");
-let cold = document.createElement("label");
-form.appendChild(cold);
-
-let checkbox1 = document.createElement("input");
+form.appendChild(label9);
 form.appendChild(checkbox);
 checkbox.type = "checkbox";
 
+let label10 = document.createElement("label");
+let checkbox1 = document.createElement("input");
+form.appendChild(label10);
 form.appendChild(checkbox1);
 checkbox1.type = "checkbox";
+
 let btn = document.createElement("button");
 form.append(btn);
 
@@ -190,14 +190,18 @@ input2.innerHTML = "input";
 label4.innerHTML = "Drink";
 
 label3.innerHTML = "drinkType";
-
 input3.innerHTML = "input";
-hots.innerHTML = "hots";
 
-cold.innerHTML = "cold";
+
+label9.innerHTML = "hots";
+input3.innerHTML = "input";
+
+
+label10.innerHTML = "cold";
+input3.innerHTML = "input";
+
 
 btn.innerText = "login";
-
 
 btn.onclick = function (e) {
   p.innerHTML += input1.value;
@@ -217,4 +221,6 @@ btn.onclick = function (e) {
 
 form.style.display = "flex";
 form.style.flexDirection = "column";
+form.style.alignItems= "center"
 form.style.width = "25%";
+ch;
