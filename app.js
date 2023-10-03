@@ -6,7 +6,7 @@ oo.push(name);
 let gender;
 function lol() {
   while (gender != "male" || gender != "female") {
-    gender = prompt("what is your Gender male/female please");
+    gender = prompt("what is your gender");
     let issa = gender.toLocaleLowerCase();
     if (issa == "male") {
       alert("Welcome Mr" + `${name}`);
@@ -43,6 +43,25 @@ console.log(
   "drinkType:" + drinkType,
   "drinkName:" + drinkName
 );
+
+let div = document.getElementById("ll");
+let p = document.createElement("p");
+
+let ul = document.createElement("ul");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+let li4 = document.createElement("li");
+let li5 = document.createElement("li");
+div.appendChild(p);
+div.appendChild(ul);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
+
+p.innerHTML = "name" + name;
+li2.innerHTML = "gender" + gender;
+li3.innerHTML = "age" + age;
+li4.innerHTML = "drinkType" + drinkType;
 
 // //Evaluate each of the following Javascript expressions and show the value
 // console.log(-9 * 3);
@@ -127,29 +146,71 @@ console.log(
 //     alert("PLEASE TRY AGAIN");
 // }
 
-// let input = document.querySelectorAll("form .input");
-// let list = document.getElementsByTagName("li");
-// let btn = document.getElementsByClassName(".kk");
 
-let hh = document.getElementById("uu");
-let div = document.getElementById("ll");
-let hhhh = document.getElementById("kk");
-function issa() {
-  hhh.createElement();
-}
 
-let ul = document.createElement("ul");
-let p = document.createElement("p");
-let li2 = document.createElement("li");
-let li3 = document.createElement("li");
-let li4 = document.createElement("li");
+// let form = document.getElementById("issa");
+// let label = document.createElement("label");
+// let input1 = document.createElement("input");
+// form.appendChild(label);
+// form.appendChild(input1);
 
-div.appendChild(p);
-div.appendChild(li2);
-div.appendChild(li3);
-div.appendChild(li4);
+// let label2 = document.createElement("label");
+// let input2 = document.createElement("input");
+// form.appendChild(label2);
+// form.appendChild(input2);
 
-p.innerHTML = ("name", name);
-li2.innerHTML = ("gender", gender);
-li3.innerHTML = ("age", age);
-li4.innerHTML = ("drinkType", drinkType);
+// let label3 = document.createElement("label");
+// let input3 = document.createElement("input");
+// input3.type = "number";
+// form.appendChild(label3);
+// form.appendChild(input3);
+
+// let label4 = document.createElement("label");
+// let checkbox = document.createElement("input");
+// let checkbox1 = document.createElement("input");
+// form.appendChild(label4);
+// form.appendChild(checkbox);
+// checkbox.type = "checkbox";
+
+// form.appendChild(checkbox1);
+// checkbox1.type = "checkbox";
+// let btn = document.createElement("button");
+// form.append(btn);
+
+// label.innerHTML = "name";
+// input1.innerHTML = "input";
+
+// label2.innerHTML = "gender";
+// input2.innerHTML = "input";
+
+// label3.innerHTML = "age";
+// input3.innerHTML = "input";
+
+// label4.innerHTML = "Drink";
+
+// btn.innerText = "login";
+
+// let input11 = document.getElementById("input1");
+// let input22 = document.getElementById("input2");
+// let input33 = document.getElementById("input3");
+// let btn = document.getElementById("button");
+// let input4 = document.getElementById("input4");
+// let input5 = document.getElementById("input5");
+// let btn = document.getElementById("btn");
+
+
+
+// btn.onclick = function (e) {
+//   p.innerHTML += input1.value;
+//   li2.textContent += input2.value;
+//   li3.textContent += input3.value;
+//   // li4.textContent += input4.value;
+
+//   e.preventDefault();
+// };
+
+// form.style.display = "flex";
+// form.style.flexDirection = "column";
+// form.style.width = "25%";
+
+
