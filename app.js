@@ -1,26 +1,26 @@
-let oo = [];
+// let oo = [];
 
-let name = prompt("what is your name");
-oo.push(name);
+// let name = prompt("what is your name");
+// oo.push(name);
 
-let gender;
-function lol() {
-  while (gender != "male" || gender != "female") {
-    gender = prompt(" Gender male/female please");
-    let issa = gender.toLocaleLowerCase();
-    if (issa == "male") {
-      alert("Welcome Mr" + `${name}`);
-      oo.push(issa);
-      break;
-    } else if (issa == "female") {
-      alert("Welcome Ms" + `${name}`);
-      oo.push(issa);
+// let gender;
+// function lol() {
+//   while (gender != "male" || gender != "female") {
+//     gender = prompt(" Gender male/female please");
+//     let issa = gender.toLocaleLowerCase();
+//     if (issa == "male") {
+//       alert("Welcome Mr" + `${name}`);
+//       oo.push(issa);
+//       break;
+//     } else if (issa == "female") {
+//       alert("Welcome Ms" + `${name}`);
+//       oo.push(issa);
 
-      break;
-    }
-  }
-}
-lol();
+//       break;
+//     }
+//   }
+// }
+// lol();
 
 // let age = prompt("push your age");
 // oo.push(age);
@@ -44,19 +44,19 @@ lol();
 //   "drinkName:" + drinkName
 // );
 
-// let div = document.getElementById("ll");
-// let p = document.createElement("p");
+let div = document.getElementById("ll");
+let p = document.createElement("p");
 
-// let ul = document.createElement("ul");
-// let li2 = document.createElement("li");
-// let li3 = document.createElement("li");
-// let li4 = document.createElement("li");
-// let li5 = document.createElement("li");
-// div.appendChild(p);
-// div.appendChild(ul);
-// ul.appendChild(li2);
-// ul.appendChild(li3);
-// ul.appendChild(li4);
+let ul = document.createElement("ul");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+let li4 = document.createElement("li");
+let li5 = document.createElement("li");
+div.appendChild(p);
+div.appendChild(ul);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
 
 // p.innerHTML = "name" + name;
 // li2.innerHTML = "gender" + gender;
@@ -154,19 +154,25 @@ form.appendChild(input1);
 
 let label2 = document.createElement("label");
 let input2 = document.createElement("input");
+input2.type = "number";
 form.appendChild(label2);
 form.appendChild(input2);
 
 let label3 = document.createElement("label");
 let input3 = document.createElement("input");
-input3.type = "number";
 form.appendChild(label3);
 form.appendChild(input3);
 
 let label4 = document.createElement("label");
-let checkbox = document.createElement("input");
-let checkbox1 = document.createElement("input");
 form.appendChild(label4);
+
+let hots = document.createElement("label");
+form.appendChild(hots);
+let checkbox = document.createElement("input");
+let cold = document.createElement("label");
+form.appendChild(cold);
+
+let checkbox1 = document.createElement("input");
 form.appendChild(checkbox);
 checkbox.type = "checkbox";
 
@@ -178,31 +184,35 @@ form.append(btn);
 label.innerHTML = "name";
 input1.innerHTML = "input";
 
-label2.innerHTML = "gender";
+label2.innerHTML = "age";
 input2.innerHTML = "input";
-
-label3.innerHTML = "age";
-input3.innerHTML = "input";
 
 label4.innerHTML = "Drink";
 
+label3.innerHTML = "drinkType";
+
+input3.innerHTML = "input";
+hots.innerHTML = "hots";
+
+cold.innerHTML = "cold";
+
 btn.innerText = "login";
 
-// let input1 = document.getElementById("input1");
-// let input2 = document.getElementById("input2");
-// let input3 = document.getElementById("input3");
-// let btn = document.getElementById("button");
-// let input4 = document.getElementById("input4");
-// let input5 = document.getElementById("input5");
-let btn = document.getElementById("btn");
 
 btn.onclick = function (e) {
   p.innerHTML += input1.value;
   li2.textContent += input2.value;
   li3.textContent += input3.value;
   // li4.textContent += input4.value;
-
   e.preventDefault();
+
+  if (checkbox.checked == true) {
+    li4.innerHTML = "hot";
+  } else if (checkbox1.checked == true) {
+    li4.innerHTML = "cold";
+  } else if (checkbox1.checked == true && checkbox.checked == true) {
+    li4.innerHTML = "cas";
+  }
 };
 
 form.style.display = "flex";
