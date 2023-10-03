@@ -6,7 +6,7 @@ oo.push(name);
 let gender;
 function lol() {
   while (gender != "male" || gender != "female") {
-    gender = prompt("what is your gender");
+    gender = prompt(" Gender male/female please");
     let issa = gender.toLocaleLowerCase();
     if (issa == "male") {
       alert("Welcome Mr" + `${name}`);
