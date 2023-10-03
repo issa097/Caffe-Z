@@ -22,6 +22,10 @@ function lol() {
 }
 lol();
 
+let age = prompt("push your age");
+oo.push(age);
+console.log(age);
+
 let drinkType = prompt("do you want hot or cold drink");
 oo.push(drinkType);
 let drinkName = prompt("what is your drink name");
@@ -39,7 +43,6 @@ console.log(
   "drinkType:" + drinkType,
   "drinkName:" + drinkName
 );
-
 
 // //Evaluate each of the following Javascript expressions and show the value
 // console.log(-9 * 3);
@@ -123,3 +126,30 @@ console.log(
 //   default:
 //     alert("PLEASE TRY AGAIN");
 // }
+
+// let input = document.querySelectorAll("form .input");
+// let list = document.getElementsByTagName("li");
+// let btn = document.getElementsByClassName(".kk");
+
+let hh = document.getElementById("uu");
+let div = document.getElementById("ll");
+let hhhh = document.getElementById("kk");
+function issa() {
+  hhh.createElement();
+}
+
+let ul = document.createElement("ul");
+let p = document.createElement("p");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+let li4 = document.createElement("li");
+
+div.appendChild(p);
+div.appendChild(li2);
+div.appendChild(li3);
+div.appendChild(li4);
+
+p.innerHTML = ("name", name);
+li2.innerHTML = ("gender", gender);
+li3.innerHTML = ("age", age);
+li4.innerHTML = ("drinkType", drinkType);
