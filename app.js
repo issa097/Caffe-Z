@@ -22,46 +22,46 @@ function lol() {
 }
 lol();
 
-let age = prompt("push your age");
-oo.push(age);
-console.log(age);
+// let age = prompt("push your age");
+// oo.push(age);
+// console.log(age);
 
-let drinkType = prompt("do you want hot or cold drink");
-oo.push(drinkType);
-let drinkName = prompt("what is your drink name");
-oo.push(drinkName);
+// let drinkType = prompt("do you want hot or cold drink");
+// oo.push(drinkType);
+// let drinkName = prompt("what is your drink name");
+// oo.push(drinkName);
 
-alert("your drink is getting prepared ");
+// alert("your drink is getting prepared ");
 
-for (let i = 0; i < oo.length; i++) {
-  console.log(oo[i]);
-}
+// for (let i = 0; i < oo.length; i++) {
+//   console.log(oo[i]);
+// }
 
-console.log(
-  "name:" + name,
-  "gender:" + gender,
-  "drinkType:" + drinkType,
-  "drinkName:" + drinkName
-);
+// console.log(
+//   "name:" + name,
+//   "gender:" + gender,
+//   "drinkType:" + drinkType,
+//   "drinkName:" + drinkName
+// );
 
-let div = document.getElementById("ll");
-let p = document.createElement("p");
+// let div = document.getElementById("ll");
+// let p = document.createElement("p");
 
-let ul = document.createElement("ul");
-let li2 = document.createElement("li");
-let li3 = document.createElement("li");
-let li4 = document.createElement("li");
-let li5 = document.createElement("li");
-div.appendChild(p);
-div.appendChild(ul);
-ul.appendChild(li2);
-ul.appendChild(li3);
-ul.appendChild(li4);
+// let ul = document.createElement("ul");
+// let li2 = document.createElement("li");
+// let li3 = document.createElement("li");
+// let li4 = document.createElement("li");
+// let li5 = document.createElement("li");
+// div.appendChild(p);
+// div.appendChild(ul);
+// ul.appendChild(li2);
+// ul.appendChild(li3);
+// ul.appendChild(li4);
 
-p.innerHTML = "name" + name;
-li2.innerHTML = "gender" + gender;
-li3.innerHTML = "age" + age;
-li4.innerHTML = "drinkType" + drinkType;
+// p.innerHTML = "name" + name;
+// li2.innerHTML = "gender" + gender;
+// li3.innerHTML = "age" + age;
+// li4.innerHTML = "drinkType" + drinkType;
 
 // //Evaluate each of the following Javascript expressions and show the value
 // console.log(-9 * 3);
@@ -146,71 +146,65 @@ li4.innerHTML = "drinkType" + drinkType;
 //     alert("PLEASE TRY AGAIN");
 // }
 
+let form = document.getElementById("issa");
+let label = document.createElement("label");
+let input1 = document.createElement("input");
+form.appendChild(label);
+form.appendChild(input1);
 
+let label2 = document.createElement("label");
+let input2 = document.createElement("input");
+form.appendChild(label2);
+form.appendChild(input2);
 
-// let form = document.getElementById("issa");
-// let label = document.createElement("label");
-// let input1 = document.createElement("input");
-// form.appendChild(label);
-// form.appendChild(input1);
+let label3 = document.createElement("label");
+let input3 = document.createElement("input");
+input3.type = "number";
+form.appendChild(label3);
+form.appendChild(input3);
 
-// let label2 = document.createElement("label");
-// let input2 = document.createElement("input");
-// form.appendChild(label2);
-// form.appendChild(input2);
+let label4 = document.createElement("label");
+let checkbox = document.createElement("input");
+let checkbox1 = document.createElement("input");
+form.appendChild(label4);
+form.appendChild(checkbox);
+checkbox.type = "checkbox";
 
-// let label3 = document.createElement("label");
-// let input3 = document.createElement("input");
-// input3.type = "number";
-// form.appendChild(label3);
-// form.appendChild(input3);
+form.appendChild(checkbox1);
+checkbox1.type = "checkbox";
+let btn = document.createElement("button");
+form.append(btn);
 
-// let label4 = document.createElement("label");
-// let checkbox = document.createElement("input");
-// let checkbox1 = document.createElement("input");
-// form.appendChild(label4);
-// form.appendChild(checkbox);
-// checkbox.type = "checkbox";
+label.innerHTML = "name";
+input1.innerHTML = "input";
 
-// form.appendChild(checkbox1);
-// checkbox1.type = "checkbox";
-// let btn = document.createElement("button");
-// form.append(btn);
+label2.innerHTML = "gender";
+input2.innerHTML = "input";
 
-// label.innerHTML = "name";
-// input1.innerHTML = "input";
+label3.innerHTML = "age";
+input3.innerHTML = "input";
 
-// label2.innerHTML = "gender";
-// input2.innerHTML = "input";
+label4.innerHTML = "Drink";
 
-// label3.innerHTML = "age";
-// input3.innerHTML = "input";
+btn.innerText = "login";
 
-// label4.innerHTML = "Drink";
-
-// btn.innerText = "login";
-
-// let input11 = document.getElementById("input1");
-// let input22 = document.getElementById("input2");
-// let input33 = document.getElementById("input3");
+// let input1 = document.getElementById("input1");
+// let input2 = document.getElementById("input2");
+// let input3 = document.getElementById("input3");
 // let btn = document.getElementById("button");
 // let input4 = document.getElementById("input4");
 // let input5 = document.getElementById("input5");
-// let btn = document.getElementById("btn");
+let btn = document.getElementById("btn");
 
+btn.onclick = function (e) {
+  p.innerHTML += input1.value;
+  li2.textContent += input2.value;
+  li3.textContent += input3.value;
+  // li4.textContent += input4.value;
 
+  e.preventDefault();
+};
 
-// btn.onclick = function (e) {
-//   p.innerHTML += input1.value;
-//   li2.textContent += input2.value;
-//   li3.textContent += input3.value;
-//   // li4.textContent += input4.value;
-
-//   e.preventDefault();
-// };
-
-// form.style.display = "flex";
-// form.style.flexDirection = "column";
-// form.style.width = "25%";
-
-
+form.style.display = "flex";
+form.style.flexDirection = "column";
+form.style.width = "25%";
